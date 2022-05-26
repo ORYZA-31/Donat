@@ -1,8 +1,8 @@
-output: main.o
-	g++ main.o -o main
+output: main2.o
+	g++ main2.o -o main2
 
-compile:main.cpp
-	g++ -c main.cpp
+compile:main2.cpp
+	g++ -c main2.cpp
 
 clean:
-	rm *.o main
+	rm *.o main2
