@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu May 26 16:25:34 2022
+# Make data base, printed on Thu May 26 17:02:12 2022
 
 # Variables
 
@@ -257,9 +259,9 @@ LC_IDENTIFICATION = id_ID.UTF-8
 
 # Directories
 
-# . (device 2050, inode 5647841): 5 files, no impossibilities.
+# . (device 2050, inode 5647841): 8 files, no impossibilities.
 
-# 5 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -267,17 +269,17 @@ LC_IDENTIFICATION = id_ID.UTF-8
 
 # Files
 
-compile: main.cpp
+compile: main2.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 5):
-	g++ -c main.cpp
+	g++ -c main2.cpp
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-26 16:25:12.19765473
+#  Last modified 2022-05-26 16:43:45.526246954
 #  File has been updated.
 #  Successfully updated.
 
@@ -286,7 +288,7 @@ clean:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
-	rm *.o main
+	rm *.o main2
 
 # Not a target:
 .DEFAULT:
@@ -294,12 +296,12 @@ clean:
 #  Modification time never checked.
 #  File has not been updated.
 
-output: main.o
+output: main2.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
-	g++ main.o -o main
+	g++ main2.o -o main2
 
 # Not a target:
 all:
@@ -309,13 +311,13 @@ all:
 #  File has not been updated.
 
 # Not a target:
-main.cpp:
+main2.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-main.o:
+main2.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -328,14 +330,12 @@ main.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 14 / storage = 114 B / avg = 8 B
-# current buf: size = 8162 B / used = 114 B / count = 14 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 138 B / avg = 8 B
+# current buf: size = 8162 B / used = 138 B / count = 17 / avg = 8 B
 
-# strcache performance: lookups = 22 / hit rate = 36%
+# strcache performance: lookups = 25 / hit rate = 32%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=0/22=0%
-# Finished Make data base on Thu May 26 16:25:34 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/25=0%
+# Finished Make data base on Thu May 26 17:02:12 2022
 
  
-make: *** No rule to make target 'all'.  Stop.
-

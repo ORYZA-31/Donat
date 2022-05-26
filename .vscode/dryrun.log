@@ -1,6 +1,6 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/oryza/Dev/Donat'
-g++    -c -o main.o main.cpp
-g++ main.o -o main
+g++    -c -o main2.o main2.cpp
+g++ main2.o -o main2
 make: Leaving directory '/home/oryza/Dev/Donat'
  
