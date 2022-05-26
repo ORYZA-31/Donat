@@ -26,8 +26,8 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     -
       name: Build and push
-      id: docker-build
       uses: docker/build-push-action@v3
       with:
+        context: .
         push: true
         tags: oryzasativa31/repo-donat:latest
