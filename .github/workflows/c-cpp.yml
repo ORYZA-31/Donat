@@ -16,4 +16,5 @@ jobs:
     - name: make
       run: make
     - name: configure
-      run: ./main
+      run: ./main2
+    
