@@ -29,4 +29,4 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: oryzasativa31/repo-donat/app:latest
+        tags: oryzasativa31/repo-donat/:latest
